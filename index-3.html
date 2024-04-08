@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("enter the a number here . . "))
+        let b = parseInt(prompt("enter the b number here . . "))
+        let c = parseInt(prompt("enter the c number here . . "))
+        let d = parseInt(prompt("enter the d number here . . "))
+        let A;
+
+
+        function num(A) {
+            if (a > b) {
+                if (a > c) {
+                    if (a > d) {
+                        return "a is max";
+                    } else {
+                        return "d is max";
+                    }
+                } else {
+                    return "c is max";
+                }
+            } else {
+                if (b > c) {
+                    if (b > d) {
+                        return "b is max";
+                    } else {
+                        return "d is max";
+                    }
+                } else {
+                    if (c > d) {
+                        return "c is max";
+                    } else {
+                        return "d is max";
+                    }
+                }
+            }
+        }
+
+        console.log(num(A));
+    </script>
+</body>
+
+</html>
