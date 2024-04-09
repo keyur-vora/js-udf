@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let first_angel = parseFloat(prompt("enter teh first angel here"))
+        let second_angel = parseFloat(prompt("enter teh second angel here"))
+        let third_angel = parseFloat(prompt("enter teh third angel here"))
+        let totl = first_angel + second_angel + third_angel;
+        
+        function chack(totl) {
+            if (totl == 180) {
+                return "this triangle is perfect";
+            } else {
+                return "this triangle is not perfect";
+            }
+        }
+
+        console.log(chack(totl));
+
+    </script>
+</body>
+
+</html>

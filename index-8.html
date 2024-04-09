@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("ennter first the number here"));
+        let b = parseInt(prompt("ennter second the number here"));
+        let choice = parseInt(prompt("ennter the choice here"));
+
+        function calc(choice) {
+            console.log("press 1 for +");
+            console.log("press 2 for -");
+            console.log("press 3 for *");
+            console.log("press 4 for /");
+
+            switch (choice) {
+                case 1:
+                    return "a + b is :" + (a + b);
+                    break;
+
+                case 2:
+                    return "a - b is :" + (a - b);
+                    break;
+
+                case 3:
+                    return "a * b is :" + (a * b);
+                    break;
+
+                case 4:
+                    return "a / b is :" + (a / b);
+                    break;
+
+                    default:
+                        return "enter a valid choice";  
+            }
+        }
+
+        console.log(calc(choice))
+    </script>
+</body>
+
+</html>
